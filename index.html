@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit World!</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(abs-1850926_1920.jpg);
+            color: #fff;
+            height: 1200px;
+
+        }
+
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+
+        }
+
+        .center {
+            display: block;
+            width: 600px;
+            margin: 20px auto;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 24px;
+            top: 10px;
+            color: white;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        a:hover,
+        a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 65px;
+            height: 50px;
+            filter: invert(100%);
+        }
+
+        button {
+            background-color: rgba(32, 31, 31, 0.342);
+            color: #fff;
+            padding: 4px 14px;
+            margin: 5px;
+            border: 2px solid grey;
+            font-size: 15px;
+            border-radius: 50px;
+        }
+
+        button:hover {
+
+            background-color: grey;
+
+        }
+
+        .container {
+            border: 2px solid #fff;
+            width: 33%;
+            margin-top: 100px;
+            margin-left: 20px;
+            padding: 30px;
+            border-radius: 40px;
+        }
+
+        .container h1 {
+            text-align: center;
+            animation-name: A1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes A1 {
+            from {
+                opacity: 0.1;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+        .form-grp input {
+
+            display: block;
+            justify-content: center;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 7px;
+            border: 1px solid grey;
+            font-size: 20px;
+            width: 320px;
+
+        }
+
+        .btn {
+            display: block;
+            justify-content: center;
+            margin: 15px auto;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <div class="left">
+            <img src="weightlifting.png" alt="">
+        </div>
+        <div class="center">
+            <div class="menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Fitness calculator</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="right">
+            <button>facebook</button>
+            <button>Email</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>join the best gym in Delhi!</h1>
+        <form action="noaction.php">
+            <div class="form-grp">
+                <input type="text" placeholder="enter your Name">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="enter your Age">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="enter your Gender">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="enter your Locality">
+            </div>
+            <div>
+                <button class="btn">submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
